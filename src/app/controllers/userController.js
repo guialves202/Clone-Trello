@@ -1,9 +1,11 @@
 import app from "../../app.js";
+import UserRepository from "../repositories/userRepository.js";
 
 class UserController {
     
-    store() {
-        console.log('Entrou no método store');
+    store(req, res) {
+        const msg = UserRepository.create();
+        res.send('Entrou no método store, ' + msg);
     }
 }
 

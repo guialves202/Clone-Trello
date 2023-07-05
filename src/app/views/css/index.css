@@ -59,8 +59,9 @@
 }
 
 .login-div a {
-    padding: 3vh 3vh;
+    padding: 3vh;
     text-decoration: none;
+    height: 100%;
 }
 
 .login-div .register {
