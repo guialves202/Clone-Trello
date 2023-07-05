@@ -1,9 +1,16 @@
-import sequelize from "../database/connection.js";
+import Users from "../database/connection.js";
 
 class UserRepository {
 
-    create() {
-        return 'Entrou no método create';
+    findUser(body) {
+        return;
+    }
+
+    create(body) {
+        Users.create({
+            email: body.email,
+            password: body.password
+        })
     }
 }
 

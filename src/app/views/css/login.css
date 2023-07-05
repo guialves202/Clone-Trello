@@ -38,7 +38,7 @@
     width: 100%;
 }
 
-#signup-form {
+#login-form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +47,7 @@
     width: 100%;
 }
 
-#signup-form input {
+#login-form input {
     font-size: 16px;
     padding: .6em;
     margin-bottom: 4vh;

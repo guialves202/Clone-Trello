@@ -12,12 +12,13 @@ const Users = sequelize.define('users', {
         allowNull: false
     },
     password: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING(100),
         allowNull: false
     }
 })
 
-Users.sync();
+// Criar a tabela Users
+// Users.sync();
 
 sequelize.authenticate()
 .then(() => {
@@ -27,4 +28,4 @@ sequelize.authenticate()
     console.log('Falha ao conectar: ' + err)
 })
 
-export default sequelize;
+export default Users;

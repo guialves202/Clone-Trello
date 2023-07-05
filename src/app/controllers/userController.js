@@ -3,9 +3,16 @@ import UserRepository from "../repositories/userRepository.js";
 
 class UserController {
     
+    index(req, res) {
+        const body = req.body;
+
+        const content = UserRepository.findUser(body)
+
+    }
+
     store(req, res) {
-        const msg = UserRepository.create();
-        res.send('Entrou no método store, ' + msg);
+        const body = req.body;
+        const content = UserRepository.create(body)
     }
 }
 

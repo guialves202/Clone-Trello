@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignUp</title>
-    <link rel="stylesheet" type="text/css" href="../css/signUp.css">
-    <script src="../js/signUp.js" defer></script>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <script src="../js/login.js" defer></script>
 </head>
 <body>
     <div id="main">
         <img src="../img/trello-logo-gradient-blue-attribution_rgb@2x (1).png" alt="logo" class="logo-img">
         <div class="container">
             <h1>Inscreva-se para obter uma conta</h1>
-            <form id="signup-form">
+            <form id="login-form">
                 <input type="email" class="email-input" placeholder="Insira o e-mail">
                 <input type="text" class="passw-input" placeholder="Insira a senha">
                 <p>Ao clicar abaixo em “Continuar”, você concorda com os Termos de Serviço do Atlassian Cloud da Atlassian e reconhece a Política de Privacidade.</p>
-                <button type="submit" id="submit-user" onclick="insertUser()">Continuar</button>
+                <button id="submit-user" onclick="loginUser()">Continuar</button>
             </form>
         </div>
     </div>
