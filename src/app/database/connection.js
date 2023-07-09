@@ -28,4 +28,10 @@ sequelize.authenticate()
     console.log('Falha ao conectar: ' + err)
 })
 
-export default Users;
+const db = {
+    Sequelize: Sequelize,
+    sequelize: sequelize,
+    Users: Users
+}
+
+export default db;

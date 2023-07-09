@@ -1,16 +1,14 @@
-import Users from "../database/connection.js";
+import db from "../database/connection.js";
 
 class UserRepository {
 
-    findUser(body) {
-        return;
+    async findUser(email) {
+        const user = await db.Users.findOne({ where: { email: email}});
+        return JSON.stringify(user);
     }
 
-    create(body) {
-        Users.create({
-            email: body.email,
-            password: body.password
-        })
+    create(user) {
+        db.Users.create(user)
     }
 }
 
